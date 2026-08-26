@@ -1,0 +1,150 @@
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    width: min(calc(100% - 2rem), var(--container-width));
+    margin-inline: auto;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.section {
+    padding-block: var(--space-3xl);
+}
+
+.section--sm {
+    padding-block: var(--space-2xl);
+}
+
+.section--lg {
+    padding-block: clamp(6rem, 10vw, 10rem);
+}
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.section-header {
+    max-width: 700px;
+    margin: 0 auto var(--space-2xl);
+    text-align: center;
+}
+
+.section-subtitle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .45rem 1rem;
+    margin-bottom: var(--space-md);
+
+    background: var(--primary-light);
+    color: var(--primary-dark);
+
+    border-radius: var(--radius-full);
+
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+}
+
+.section-title {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    color: var(--text);
+    line-height: 1.15;
+    margin-bottom: var(--space-md);
+}
+
+.section-description {
+    font-size: var(--fs-base);
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+/* ========================================
+   FLEX
+======================================== */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 992px) {
+
+    .grid-4,
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .section {
+        padding-block: var(--space-2xl);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-xl);
+    }
+
+    .grid-4,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+}

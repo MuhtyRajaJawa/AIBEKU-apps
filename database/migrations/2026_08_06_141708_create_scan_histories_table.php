@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('scan_histories', function (Blueprint $table) {
+
+            $table->id();
+
+            $table->string('image');
+
+            $table->string('object');
+
+            $table->string('material');
+
+            $table->string('category');
+
+            $table->string('condition');
+
+            $table->json('recommendations');
+
+            $table->timestamps();
+
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('scan_histories');
+    }
+};
