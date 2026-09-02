@@ -408,178 +408,175 @@
 
             </aside>
 
-            <!-- ========================================= -->
-            <!-- IDE UPCYCLING -->
-            <!-- ========================================= -->
+        <!-- ========================================= -->
+        <!-- IDE UPCYCLING -->
+        <!-- ========================================= -->
 
-            <section class="idea-section" style="display:none;">
+        <section class="idea-section" style="display:none;">
 
-                <div class="section-title">
+            <div class="section-title">
 
-                    <i data-lucide="lightbulb"></i>
+                <i data-lucide="lightbulb"></i>
 
-                    <span>Ide Upcycling</span>
+                <span>Ide Upcycling</span>
 
-                </div>
+            </div>
+
+            <div
+                id="recommendationList"
+                class="recommendation-grid">
+
+                <!-- Card akan dibuat oleh scan.js -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================= -->
+        <!-- DETAIL IDEA -->
+        <!-- ========================================= -->
+
+        <div
+            id="detailState"
+            class="detail-state"
+            style="display:none;">
+
+            <button
+                id="backToIdeas"
+                class="back-detail">
+
+                <i data-lucide="arrow-left"></i>
+
+                <span>Kembali</span>
+
+            </button>
+
+            <div class="detail-header">
+
+                <h3 id="detailTitle">-</h3>
 
                 <div
-                    id="recommendationList"
-                    class="recommendation-grid">
+                    id="detailDifficulty"
+                    class="difficulty-badge">
 
-                    <!-- Card akan dibuat oleh scan.js -->
+                    -
 
                 </div>
 
-            </section>
+            </div>
 
-                    <!-- ========================================= -->
-                    <!-- DETAIL IDEA -->
-                    <!-- ========================================= -->
+            <div class="detail-row">
 
-                    <div
-                        id="detailState"
-                        class="detail-state"
-                        style="display:none;">
+                <i data-lucide="clock-3"></i>
 
-                        <button
-                            id="backToIdeas"
-                            class="back-detail">
+                <span>Estimasi :</span>
 
-                            <i data-lucide="arrow-left"></i>
+                <strong id="detailTime">-</strong>
 
-                            <span>Kembali</span>
+            </div>
 
-                        </button>
+            <div class="detail-block">
 
-                        <div class="detail-header">
+                <h4>
 
-                            <h3
-                                id="detailTitle">
+                    <i data-lucide="hammer"></i>
 
-                                -
+                    Alat & Bahan
 
-                            </h3>
+                </h4>
 
-                            <div
-                                id="detailDifficulty"
-                                class="difficulty-badge">
+                <ul id="detailTools"></ul>
 
-                                -
+            </div>
 
-                            </div>
+            <div class="detail-block">
 
-                        </div>
+                <h4>
 
-                            <div class="detail-row">
+                    <i data-lucide="book-open"></i>
 
-                                <i data-lucide="clock-3"></i>
+                    Langkah Pembuatan
 
-                                <span>Estimasi :</span>
+                </h4>
 
-                                <strong id="detailTime">-</strong>
+                <ol id="detailSteps"></ol>
 
-                            </div>
+            </div>
 
-                        <div class="detail-block">
+        </div>
 
-                            <h4>
 
-                                <i data-lucide="hammer"></i>
+        <!-- ========================================= -->
+        <!-- CHAT SECTION -->
+        <!-- ========================================= -->
 
-                                Alat & Bahan
+        <section class="chat-section">
 
-                            </h4>
+            <div class="chat-header">
 
-                            <ul
-                                id="detailTools">
+                <div class="chat-icon">
 
-                            </ul>
+                    <i data-lucide="messages-square"></i>
 
-                        </div>
+                </div>
 
-                        <div class="detail-block">
+                <div>
 
-                            <h4>
+                    <h4>
+                        Tanya AI Daurin
+                    </h4>
 
-                                <i data-lucide="book-open"></i>
+                    <p>
+                        Tanyakan apa saja mengenai ide upcycling ini.
+                    </p>
 
-                                Langkah Pembuatan
+                </div>
 
-                            </h4>
+            </div>
 
-                            <ol
-                                id="detailSteps">
+            <div
+                id="chatMessages"
+                class="chat-messages">
 
-                            </ol>
+                <div class="chat-bubble ai">
 
-                        </div>
+                    👋 Halo!
 
-                    </div>
+                    <br><br>
 
-                    <!-- ========================================= -->
-                    <!-- CHAT SECTION -->
-                    <!-- ========================================= -->
+                    Saya adalah <strong>AI Daurin</strong>.
 
-                    <section class="chat-section">
+                    Setelah proses analisis selesai,
+                    saya akan membantu menjelaskan ide
+                    upcycling, alat yang dibutuhkan,
+                    langkah pembuatan, hingga tips
+                    pengerjaannya.
 
-                        <div class="chat-header">
+                </div>
 
-                            <div class="chat-icon">
-                                <i data-lucide="messages-square"></i>
-                            </div>
+            </div>
 
-                            <div>
+            <div class="chat-input">
 
-                                <h4>
-                                    Tanya AI Daurin
-                                </h4>
+                <input
+                    type="text"
+                    id="chatInput"
+                    placeholder="Contoh: Bagaimana cara membuatnya?"
+                >
 
-                                <p>
-                                    Tanyakan apa saja mengenai ide upcycling ini.
-                                </p>
+                <button id="sendChat">
 
-                            </div>
+                    <i data-lucide="send-horizontal"></i>
 
-                        </div>
+                </button>
 
-                        <div
-                            id="chatMessages"
-                            class="chat-messages">
+            </div>
 
-                            <div class="chat-bubble ai">
+        </section>
 
-                                👋 Halo!
+        </div>
 
-                                <br><br>
-
-                                Saya adalah <strong>AI Daurin</strong>.
-
-                                Setelah proses analisis selesai,
-                                saya akan membantu menjelaskan ide
-                                upcycling, alat yang dibutuhkan,
-                                langkah pembuatan, hingga tips
-                                pengerjaannya.
-
-                            </div>
-
-                        </div>
-
-                        <div class="chat-input">
-
-                            <input
-                                type="text"
-                                id="chatInput"
-                                placeholder="Contoh: Bagaimana cara membuatnya?"
-                            >
-
-                            <button id="sendChat">
-
-                                <i data-lucide="send-horizontal"></i>
-
-                            </button>
-
-                    </div>
-
-            </section>
+    </section>
 
 @endsection

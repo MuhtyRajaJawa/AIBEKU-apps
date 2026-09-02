@@ -980,9 +980,8 @@ svg{
 ======================================================= */
 
 .detail-state{
-
     animation:fadeUp .4s ease;
-
+    padding-top:250px;
 }
 
 .back-detail{
@@ -1066,12 +1065,19 @@ svg{
 ======================================================= */
 
 .chat-section{
+
     width:100%;
-    margin-top:32px;
+
+    margin-top:245px;
+
     background:var(--white);
+
     border-radius:var(--radius);
+
     box-shadow:var(--shadow);
+
     padding:32px;
+
 }
 
 .chat-header{
