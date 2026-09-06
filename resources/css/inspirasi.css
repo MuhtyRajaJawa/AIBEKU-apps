@@ -1,5 +1,5 @@
 /* ==========================================================
-   INSPIRASI — DAURIN
+   INSPIRASI — AIBEKU
 ========================================================== */
 
 :root {
@@ -79,37 +79,18 @@ button {
 .inspiration-back {
     display: inline-flex;
     align-items: center;
-    gap: .55rem;
-
-    padding: .65rem 1rem;
-
-    border: 1px solid #e5e7eb;
-    border-radius: 999px;
-
-    background: #ffffff;
-
-    color: #475569;
-
-    font-size: .88rem;
-    font-weight: 600;
-
-    transition:
-        color .25s ease,
-        border-color .25s ease,
-        background .25s ease,
-        transform .25s ease;
+    gap: 8px;
+    color: #111827;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .inspiration-back:hover {
-    color: #059669;
-
-    border-color: #a7f3d0;
-
-    background: #ecfdf5;
-
-    transform: translateX(-2px);
+    color: #10B981;
+    transform: translateX(-3px);
 }
-
 
 /* ==========================================================
    HERO

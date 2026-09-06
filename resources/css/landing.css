@@ -18,7 +18,18 @@
 
     padding-bottom: 4rem;
 
-    background: #ffffff;
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(16,185,129,.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(16,185,129,.07),
+            transparent 30%
+        ),
+        #ffffff;
 
 }
 
@@ -128,6 +139,10 @@
 
     margin-bottom:1.3rem;
 
+}
+
+.hero__title span{
+    color:#10B981;
 }
 
 .hero__description{
@@ -2116,7 +2131,7 @@
 }
 
 /* ==========================================================
-   FAQ — DAURIN
+   FAQ — AIBEKU
 ========================================================== */
 
 .faq {

@@ -360,7 +360,7 @@
     >
 
     <title>
-        {{ $inspiration ? $inspiration['title'] . ' — Daurin' : 'Inspirasi — Daurin' }}
+        {{ $inspiration ? $inspiration['title'] . ' — AIBEKU' : 'Inspirasi — AIBEKU' }}
     </title>
 
     @vite([
@@ -419,7 +419,7 @@
             <div class="detail-hero__image">
 
                 <img
-                    src="{{ asset('storage/inspirasi/' . $inspiration['image']) }}"
+                    src="{{ asset('images/' . $inspiration['image']) }}"
                     alt="{{ $inspiration['title'] }}"
                 >
 
@@ -696,7 +696,7 @@
             </h2>
 
             <p>
-                Pindai barang bekasmu dan biarkan Daurin
+                Pindai barang bekasmu dan biarkan AIBEKU
                 menemukan ide upcycling berikutnya.
             </p>
 

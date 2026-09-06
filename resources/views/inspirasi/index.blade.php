@@ -10,7 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Inspirasi — Daurin</title>
+    <title>Inspirasi — AIBEKU</title>
 
     @vite([
         'resources/css/inspirasi.css',
@@ -143,7 +143,7 @@
                 >
 
                     <img
-                        src="{{ asset('images/inspirasi11.jpg') }}"
+                        src="{{ asset('images/inspirasi11.jpg') }}" {{-- SC: Generate AI --}}
                         alt="Pot tanaman dari botol plastik"
                     >
 
@@ -202,7 +202,7 @@
                 >
 
                     <img
-                        src="{{ asset('images/inspirasi12.jpg') }}"
+                        src="{{ asset('images/inspirasi12.jpg') }}" {{-- SC: Generate AI --}}
                         alt="Organizer meja dari kardus"
                     >
 
@@ -261,7 +261,7 @@
                 >
 
                     <img
-                        src="{{ asset('images/inspirasi13.jpg') }}"
+                        src="{{ asset('images/inspirasi13.jpg') }}" {{-- SC: Generate AI --}}
                         alt="Tote bag dari kain bekas"
                     >
 
@@ -320,7 +320,7 @@
                 >
 
                     <img
-                        src="{{ asset('images/inspirasi14.jpg') }}"
+                        src="{{ asset('images/inspirasi14.jpg') }}" {{-- SC: Generate AI --}}
                         alt="Lampu hias dari botol kaca"
                     >
 
@@ -379,7 +379,7 @@
                 >
 
                     <img
-                        src="{{ asset('images/inspirasi15.jpg') }}"
+                        src="{{ asset('images/inspirasi15.jpg') }}" {{-- SC: Generate AI --}}
                         alt="Kursi mini dari galon plastik"
                     >
 

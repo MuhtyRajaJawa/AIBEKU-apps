@@ -34,24 +34,16 @@
    LOGO
 ========================================================== */
 
-.navbar__logo{
-    display:flex;
-    align-items:center;
-    gap:.8rem;
-    text-decoration:none;
-    flex-shrink:0;
+.navbar__logo {
+    display: flex;
+    align-items: center;
 }
 
-.navbar__logo-image{
-    width:42px;
-    height:42px;
-    object-fit:contain;
-}
-
-.navbar__logo-text{
-    font-size:1.45rem;
-    font-weight:700;
-    color:#111827;
+.navbar__logo-image {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 /* ==========================================================
@@ -466,25 +458,22 @@
    MOBILE
 ========================================================== */
 
-@media(max-width:768px){
+@media(max-width:768px){ 
 
-    .navbar{
-        width:94%;
-        top:10px;
-    }
+    .navbar{ 
+        width:94%; 
+        top:10px; 
+    } 
 
-    .navbar__container{
-        padding:14px 18px;
-    }
+    .navbar__container{ 
+        padding:14px 18px; 
+    } 
 
-    .navbar__logo-image{
-        width:34px;
-        height:34px;
-    }
-
-    .navbar__logo-text{
-        font-size:1.15rem;
-    }
+    .navbar__logo-image{ 
+        width:120px; 
+        height:auto; 
+        max-width:none;
+    } 
 
 }
 

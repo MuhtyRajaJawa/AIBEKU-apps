@@ -26,13 +26,13 @@
 
                 Ubah Barang Bekas
                 <br>
-                Menjadi Karya Bernilai.
+                <span>Menjadi Karya Bernilai.</span>
 
             </h1>
 
             <p class="hero__description">
 
-                Daurin membantu mengenali material barang bekas menggunakan AI,
+                AIBEKU membantu mengenali material barang bekas menggunakan AI,
                 kemudian memberikan inspirasi upcycling yang mudah diikuti agar
                 barang yang dianggap sampah dapat dimanfaatkan kembali.
 
@@ -194,13 +194,13 @@
             <div class="problem-image">
 
                 <img
-                    src="{{ asset('images/sampah.jpg') }}"
+                    src="{{ asset('images/sampah.jpg') }}" {{-- SC: Generate AI --}}
                     alt="Permasalahan Sampah"
                 >
 
                 <div class="problem-overlay">
 
-                    <span>Daurin</span>
+                    <span>AIBEKU</span>
 
                     <h3>
 
@@ -217,7 +217,7 @@
 
                 <span class="section-badge">
 
-                    Mengapa Daurin Hadir?
+                    Mengapa AIBEKU Hadir?
 
                 </span>
 
@@ -231,7 +231,7 @@
 
                     Setiap hari jutaan barang bekas berakhir menjadi sampah,
                     padahal sebagian besar masih dapat dimanfaatkan kembali.
-                    Dengan bantuan AI, Daurin membantu menemukan potensi terbaik
+                    Dengan bantuan AI, AIBEKU membantu menemukan potensi terbaik
                     agar setiap barang memiliki kehidupan kedua.
 
                 </p>
@@ -299,7 +299,7 @@
             </h2>
 
             <p>
-                Daurin memanfaatkan Artificial Intelligence untuk mengenali material,
+                AIBEKU memanfaatkan Artificial Intelligence untuk mengenali material,
                 memberikan rekomendasi upcycling, dan membantu pengguna mengubah barang
                 bekas menjadi produk yang lebih bernilai.
             </p>
@@ -394,7 +394,7 @@
             </h2>
 
             <p>
-                AI Daurin memberikan berbagai rekomendasi ide kreatif berdasarkan
+                AI AIBEKU memberikan berbagai rekomendasi ide kreatif berdasarkan
                 material yang berhasil dikenali sehingga barang bekas dapat dimanfaatkan
                 kembali dengan cara yang lebih bermanfaat.
             </p>
@@ -413,7 +413,7 @@
 
             <div class="inspiration-card">
 
-                <img src="{{ asset('images/inspirasi1.jpg') }}" alt="">
+                <img src="{{ asset('images/inspirasi1.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                 <div class="inspiration-overlay">
                     <span>Botol Plastik</span>
@@ -424,7 +424,7 @@
 
             <div class="inspiration-card">
 
-                <img src="{{ asset('images/inspirasi2.jpg') }}" alt="">
+                <img src="{{ asset('images/inspirasi2.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                 <div class="inspiration-overlay">
                     <span>Botol Kaca</span>
@@ -435,7 +435,7 @@
 
             <div class="inspiration-card">
 
-                <img src="{{ asset('images/inspirasi3.jpg') }}" alt="">
+                <img src="{{ asset('images/inspirasi3.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                 <div class="inspiration-overlay">
                     <span>Kardus</span>
@@ -446,7 +446,7 @@
 
             <div class="inspiration-card">
 
-                <img src="{{ asset('images/inspirasi4.jpg') }}" alt="">
+                <img src="{{ asset('images/inspirasi4.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                 <div class="inspiration-overlay">
                     <span>Kaleng Bekas</span>
@@ -457,7 +457,7 @@
 
             <div class="inspiration-card card-large">
 
-                <img src="{{ asset('images/inspirasi5.jpg') }}" alt="">
+                <img src="{{ asset('images/inspirasi5.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                 <div class="inspiration-overlay">
                     <span>Botol Plastik</span>
@@ -477,7 +477,7 @@
     <!-- Pot Gantung (Besar) -->
     <div class="inspiration-card card-large pot-gantung">
 
-        <img src="{{ asset('images/inspirasi7.jpg') }}" alt="Pot Gantung">
+        <img src="{{ asset('images/inspirasi7.jpg') }}" alt="Pot Gantung"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Botol Plastik</span>
@@ -489,7 +489,7 @@
     <!-- Vas Bunga -->
     <div class="inspiration-card vas-bunga">
 
-        <img src="{{ asset('images/inspirasi6.jpg') }}" alt="Vas Bunga">
+        <img src="{{ asset('images/inspirasi6.jpg') }}" alt="Vas Bunga"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Botol Kaca</span>
@@ -501,7 +501,7 @@
     <!-- Tempat Sendok -->
     <div class="inspiration-card tempat-sendok">
 
-        <img src="{{ asset('images/inspirasi8.jpg') }}" alt="Tempat Sendok">
+        <img src="{{ asset('images/inspirasi8.jpg') }}" alt="Tempat Sendok"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kaleng Bekas</span>
@@ -513,7 +513,7 @@
     <!-- Keranjang -->
     <div class="inspiration-card keranjang">
 
-        <img src="{{ asset('images/inspirasi9.jpg') }}" alt="Keranjang Penyimpanan">
+        <img src="{{ asset('images/inspirasi9.jpg') }}" alt="Keranjang Penyimpanan"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kardus</span>
@@ -525,7 +525,7 @@
     <!-- Tas -->
     <div class="inspiration-card tas">
 
-        <img src="{{ asset('images/inspirasi10.jpg') }}" alt="Tas Belanja">
+        <img src="{{ asset('images/inspirasi10.jpg') }}" alt="Tas Belanja"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kain Bekas</span>
@@ -543,7 +543,7 @@
         <div class="inspiration-grid">
 
             <div class="inspiration-card">
-                <img src="{{ asset('images/inspirasi1.jpg') }}">
+                <img src="{{ asset('images/inspirasi1.jpg') }}"> {{-- SC: Generate AI --}}
                 <div class="inspiration-overlay">
                     <span>Botol Plastik</span>
                     <h3>Pot Tanaman Minimalis</h3>
@@ -551,7 +551,7 @@
             </div>
 
             <div class="inspiration-card">
-                <img src="{{ asset('images/inspirasi2.jpg') }}">
+                <img src="{{ asset('images/inspirasi2.jpg') }}"> {{-- SC: Generate AI --}}
                 <div class="inspiration-overlay">
                     <span>Botol Kaca</span>
                     <h3>Lampu Hias Modern</h3>
@@ -559,7 +559,7 @@
             </div>
 
             <div class="inspiration-card">
-                <img src="{{ asset('images/inspirasi3.jpg') }}">
+                <img src="{{ asset('images/inspirasi3.jpg') }}"> {{-- SC: Generate AI --}}
                 <div class="inspiration-overlay">
                     <span>Kardus</span>
                     <h3>Organizer Meja</h3>
@@ -567,7 +567,7 @@
             </div>
 
             <div class="inspiration-card">
-                <img src="{{ asset('images/inspirasi4.jpg') }}">
+                <img src="{{ asset('images/inspirasi4.jpg') }}">{{-- SC: Generate AI --}}
                 <div class="inspiration-overlay">
                     <span>Kaleng Bekas</span>
                     <h3>Rak Mini</h3>
@@ -575,7 +575,7 @@
             </div>
 
             <div class="inspiration-card card-large">
-                <img src="{{ asset('images/inspirasi5.jpg') }}">
+                <img src="{{ asset('images/inspirasi5.jpg') }}"> {{-- SC: Generate AI --}}
                 <div class="inspiration-overlay">
                     <span>Botol Plastik</span>
                     <h3>Tempat Pensil</h3>
@@ -593,7 +593,7 @@
     <!-- Pot Gantung (Besar) -->
     <div class="inspiration-card card-large pot-gantung">
 
-        <img src="{{ asset('images/inspirasi7.jpg') }}" alt="Pot Gantung">
+        <img src="{{ asset('images/inspirasi7.jpg') }}" alt="Pot Gantung"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Botol Plastik</span>
@@ -605,7 +605,7 @@
     <!-- Vas Bunga -->
     <div class="inspiration-card vas-bunga">
 
-        <img src="{{ asset('images/inspirasi6.jpg') }}" alt="Vas Bunga">
+        <img src="{{ asset('images/inspirasi6.jpg') }}" alt="Vas Bunga"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Botol Kaca</span>
@@ -617,7 +617,7 @@
     <!-- Tempat Sendok -->
     <div class="inspiration-card tempat-sendok">
 
-        <img src="{{ asset('images/inspirasi8.jpg') }}" alt="Tempat Sendok">
+        <img src="{{ asset('images/inspirasi8.jpg') }}" alt="Tempat Sendok"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kaleng Bekas</span>
@@ -629,7 +629,7 @@
     <!-- Keranjang -->
     <div class="inspiration-card keranjang">
 
-        <img src="{{ asset('images/inspirasi9.jpg') }}" alt="Keranjang Penyimpanan">
+        <img src="{{ asset('images/inspirasi9.jpg') }}" alt="Keranjang Penyimpanan"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kardus</span>
@@ -641,7 +641,7 @@
     <!-- Tas -->
     <div class="inspiration-card tas">
 
-        <img src="{{ asset('images/inspirasi10.jpg') }}" alt="Tas Belanja">
+        <img src="{{ asset('images/inspirasi10.jpg') }}" alt="Tas Belanja"> {{-- SC: Generate AI --}}
 
         <div class="inspiration-overlay">
             <span>Kain Bekas</span>
@@ -665,11 +665,11 @@
             </span>
 
             <h2>
-                Apa Kata Pengguna Daurin?
+                Apa Kata Pengguna AIBEKU?
             </h2>
 
             <p>
-                Ribuan pengguna telah mencoba Daurin untuk menemukan ide kreatif
+                Ribuan pengguna telah mencoba AIBEKU untuk menemukan ide kreatif
                 dalam memanfaatkan kembali barang bekas menjadi karya yang bernilai.
             </p>
 
@@ -681,7 +681,7 @@
 
                 <div class="testimonial-user">
 
-                    <img src="{{ asset('images/user1.jpg') }}" alt="">
+                    <img src="{{ asset('images/user1.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                     <div>
 
@@ -696,7 +696,7 @@
                 <p>
 
                     "Awalnya botol plastik hanya saya buang begitu saja.
-                    Setelah mencoba Daurin, ternyata bisa dijadikan pot tanaman
+                    Setelah mencoba AIBEKU, ternyata bisa dijadikan pot tanaman
                     yang estetik. Sangat membantu!"
 
                 </p>
@@ -707,7 +707,7 @@
 
                 <div class="testimonial-user">
 
-                    <img src="{{ asset('images/user2.jpg') }}" alt="">
+                    <img src="{{ asset('images/user2.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                     <div>
 
@@ -733,7 +733,7 @@
 
                 <div class="testimonial-user">
 
-                    <img src="{{ asset('images/user3.jpg') }}" alt="">
+                    <img src="{{ asset('images/user3.jpg') }}" alt=""> {{-- SC: Generate AI --}}
 
                     <div>
 
@@ -782,7 +782,7 @@
             </h2>
 
             <p>
-                Temukan jawaban seputar Daurin, teknologi AI,
+                Temukan jawaban seputar AIBEKU, teknologi AI,
                 dan cara memanfaatkan barang bekas.
             </p>
 
@@ -802,7 +802,7 @@
                 >
 
                     <span class="faq-question-text">
-                        Apa itu Daurin?
+                        Apa itu AIBEKU?
                     </span>
 
                     <span class="faq-icon">
@@ -817,7 +817,7 @@
                     <div class="faq-answer-inner">
 
                         <p>
-                            Daurin merupakan platform berbasis
+                            AIBEKU merupakan platform berbasis
                             Artificial Intelligence yang membantu
                             masyarakat mengenali material barang
                             bekas dan memberikan rekomendasi ide
@@ -856,7 +856,7 @@
                     <div class="faq-answer-inner">
 
                         <p>
-                            AI Daurin menganalisis gambar barang
+                            AI AIBEKU menganalisis gambar barang
                             yang kamu pindai untuk mengenali objek,
                             material, kategori, dan kondisinya.
                             Setelah itu, AI memberikan rekomendasi
@@ -896,7 +896,7 @@
 
                         <p>
                             Iya, Kamu dapat menjelajahi informasi dan
-                            fitur Daurin harus membuat akun Terlbih Dahulu.
+                            fitur AIBEKU harus membuat akun Terlbih Dahulu.
                             beberapa fitur tertentu dapat
                             membutuhkan akun agar data dan aktivitasmu
                             dapat tersimpan.
@@ -957,7 +957,7 @@
                 >
 
                     <span class="faq-question-text">
-                        Apakah Daurin gratis digunakan?
+                        Apakah AIBEKU gratis digunakan?
                     </span>
 
                     <span class="faq-icon">
@@ -972,7 +972,7 @@
                     <div class="faq-answer-inner">
 
                         <p>
-                            Daurin dirancang untuk membantu pengguna
+                            AIBEKU dirancang untuk membantu pengguna
                             mendapatkan inspirasi dan panduan
                             upcycling dengan cara yang mudah dan
                             praktis.
@@ -1000,9 +1000,9 @@
 
                 <div class="footer-logo">
 
-                    <img src="{{ asset('images/logo.png') }}" alt="Daurin">
+                    <img src="{{ asset('images/logo.png') }}" alt="AIBEKU">
 
-                    <h3>Daurin</h3>
+                    <h3>AIBEKU</h3>
 
                 </div>
 
@@ -1040,7 +1040,7 @@
 
                 <h4>Kontak</h4>
 
-                <a href="#">support@daurin.id</a>
+                <a href="#">support@AIBEKU.id</a>
                 <a href="#">Instagram</a>
                 <a href="#">GitHub</a>
 
@@ -1051,7 +1051,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 Daurin. Semua hak cipta dilindungi.
+                © 2026 AIBEKU. Semua hak cipta dilindungi.
             </p>
 
         </div>

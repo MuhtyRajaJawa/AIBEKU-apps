@@ -1,8 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Auth;
+
 use App\Http\Controllers\AnalyzeController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +50,38 @@ Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
 
+Route::post('/register', [RegisterController::class, 'store'])
+    ->name('register.store');
+
+Route::post('/login', [LoginController::class, 'store'])
+    ->name('login.store');
+
+Route::get('/user', function () {
+
+    if (!Auth::check()) {
+        return response()->json([], 401);
+    }
+
+    return response()->json([
+        'name' => Auth::user()->name,
+        'email' => Auth::user()->email,
+    ]);
+
+});
+
+Route::post('/logout', function () {
+
+    Auth::logout();
+
+    request()->session()->invalidate();
+    request()->session()->regenerateToken();
+
+    return response()->json([
+        'success' => true
+    ]);
+
+});
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard
@@ -71,8 +108,6 @@ Route::post('/analyze-image', [AnalyzeController::class, 'analyze'])
 
 Route::post('/chat-ai', [ChatController::class, 'chat']);
 
-use Illuminate\Support\Facades\Http;
-
 Route::get('/gemini-test', function () {
 
     $apiKey = env('GEMINI_API_KEY');
@@ -86,7 +121,7 @@ Route::get('/gemini-test', function () {
                 [
                     "parts" => [
                         [
-                            "text" => "Balas hanya dengan tulisan: Halo Daurin"
+                            "text" => "Balas hanya dengan tulisan: Halo AIBEKU"
                         ]
                     ]
                 ]

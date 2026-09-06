@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Masuk | Daurin</title>
+    <title>Masuk | AIBEKU</title>
 
     @vite([
         'resources/css/app.css',
@@ -18,7 +18,7 @@
 
     {{-- Background --}}
     <div class="auth__background"
-     style="background-image:url('{{ asset('images/background1.png') }}')">
+     style="background-image:url('{{ asset('images/background1.png') }}')"> {{-- SC: Generate AI --}}
 </div>
     <div class="auth__overlay"></div>
 
@@ -31,7 +31,7 @@
             <div class="auth__image">
 
                 <img
-                    src="{{ asset('images/fotologin.png') }}"
+                    src="{{ asset('images/fotologin.png') }}" {{-- SC: Generate AI --}}
                     alt="Login Illustration">
 
             </div>
@@ -50,12 +50,13 @@
                     </h1>
 
                     <p>
-                        Masuk untuk mulai mengubah barang bekas menjadi karya bernilai bersama AI Daurin.
+                        Masuk untuk mulai mengubah barang bekas menjadi karya bernilai bersama AI AIBEKU.
                     </p>
 
                 </div>
 
-                <form id="loginForm" class="auth__form">
+                <form id="loginForm" class="auth__form" method="POST" action="{{ route('login.store') }}">
+    @csrf
 
                     <div class="auth__group">
 
@@ -63,6 +64,7 @@
 
                         <input
                             id="email"
+                            name="email"
                             type="email"
                             placeholder="Masukkan email"
                             required>
@@ -77,6 +79,7 @@
 
                             <input
                                 id="password"
+                                name="password"
                                 type="password"
                                 placeholder="Masukkan password"
                                 required>

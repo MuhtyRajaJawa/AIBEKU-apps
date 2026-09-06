@@ -1,6 +1,6 @@
 @extends('layouts.scan')
 
-@section('title', 'AI Scanner - Daurin')
+@section('title', 'AI Scanner - AIBEKU')
 
 @section('content')
 
@@ -45,7 +45,7 @@
                         Arahkan kamera ke barang bekas yang ingin kamu ubah
                         menjadi sesuatu yang lebih bermanfaat.
 
-                        AI Daurin akan membantu menganalisis material,
+                        AI AIBEKU akan membantu menganalisis material,
                         memahami kondisi barang, kemudian memberikan ide
                         upcycling beserta panduan pembuatannya.
 
@@ -165,7 +165,7 @@
                         <div>
 
                             <h3>
-                                AI Daurin
+                                AI AIBEKU
                             </h3>
 
                             <p>
@@ -205,7 +205,7 @@
                         </div>
 
                         <h4>
-                            Selamat Datang di Daurin
+                            Selamat Datang di AIBEKU
                         </h4>
 
                         <p>
@@ -329,7 +329,7 @@
                             </div>
 
                             <p>
-                                Berikut hasil analisis AI Daurin.
+                                Berikut hasil analisis AI AIBEKU.
                             </p>
 
                         </div>
@@ -524,7 +524,7 @@
                 <div>
 
                     <h4>
-                        Tanya AI Daurin
+                        Tanya AI AIBEKU
                     </h4>
 
                     <p>
@@ -545,7 +545,7 @@
 
                     <br><br>
 
-                    Saya adalah <strong>AI Daurin</strong>.
+                    Saya adalah <strong>AI AIBEKU</strong>.
 
                     Setelah proses analisis selesai,
                     saya akan membantu menjelaskan ide

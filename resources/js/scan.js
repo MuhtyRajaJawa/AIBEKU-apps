@@ -1,6 +1,6 @@
 import { marked } from "marked";
 // ==========================================================
-// DAURIN AI SCANNER
+// AIBEKU AI SCANNER
 // ==========================================================
 
 const scanPage = document.querySelector(".scan-page");

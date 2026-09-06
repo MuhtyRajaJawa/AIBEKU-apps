@@ -78,9 +78,9 @@ class AnalyzeController extends Controller
             // =====================================================
 
             $prompt = <<<PROMPT
-Kamu adalah AI Daurin.
+Kamu adalah AI AIBEKU.
 
-Daurin adalah platform AI yang membantu pengguna memanfaatkan barang bekas melalui konsep upcycling.
+AIBEKU adalah platform AI yang membantu pengguna memanfaatkan barang bekas melalui konsep upcycling.
 
 Analisis gambar yang diberikan.
 
@@ -152,7 +152,7 @@ PROMPT;
                     'Content-Type' => 'application/json',
                 ])
                 ->post(
-                    "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key={$apiKey}",
+                    "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={$apiKey}",
                     [
                         "contents" => [
                             [

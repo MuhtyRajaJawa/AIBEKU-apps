@@ -1,5 +1,5 @@
 /* =======================================================
-   DAURIN SCAN PAGE
+   AIBEKU SCAN PAGE
    Part 1 - Design System & Layout
 ======================================================= */
 
@@ -491,6 +491,8 @@ svg{
     position:sticky;
 
     top:30px;
+
+    margin-top:124px;
 
 }
 
@@ -1068,7 +1070,7 @@ svg{
 
     width:100%;
 
-    margin-top:245px;
+    margin-top:240px;
 
     background:var(--white);
 

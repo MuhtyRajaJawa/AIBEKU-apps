@@ -59,7 +59,7 @@ class GeminiService
     public function analyzeImage(string $base64)
     {
         $prompt = <<<PROMPT
-Kamu adalah AI Daurin.
+Kamu adalah AI AIBEKU.
 
 Analisis gambar yang diberikan.
 
@@ -112,7 +112,7 @@ PROMPT;
     {
         $prompt = "
 
-Kamu adalah AI Assistant Daurin.
+Kamu adalah AI Assistant AIBEKU.
 
 Konteks hasil analisis:
 

@@ -1,4 +1,4 @@
-import { getCurrentUser, logout } from "./storage";
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -60,107 +60,147 @@ faqItems.forEach((item) => {
     // Navbar Login
     // ==========================
     const navbarAuth = document.querySelector("#navbarAuth");
-    const user = getCurrentUser();
 
-    if (navbarAuth && user) {
+    if (navbarAuth) {
 
-        navbarAuth.innerHTML = `
-            <div class="navbar-profile">
+        fetch("/user")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Belum login");
+                }
 
-                <button
-                    class="navbar-profile__button"
-                    id="profileButton">
+                return response.json();
+            })
+            .then(user => {
 
-                    👋 Halo, ${user.name}
+                navbarAuth.innerHTML = `
+                    <div class="navbar-profile">
 
-                    <span class="navbar-profile__arrow">▼</span>
+                        <button
+                            class="navbar-profile__button"
+                            id="profileButton">
 
-                </button>
+                            👋 Halo, ${user.name}
 
-                <div
-                    class="navbar-dropdown"
-                    id="profileDropdown">
+                            <span class="navbar-profile__arrow">▼</span>
 
-                    <div class="navbar-dropdown__header">
+                        </button>
 
-                        <h4>${user.name}</h4>
+                        <div
+                            class="navbar-dropdown"
+                            id="profileDropdown">
 
-                        <p>${user.email}</p>
+                            <div class="navbar-dropdown__header">
+
+                                <h4>${user.name}</h4>
+                                <p>${user.email}</p>
+
+                            </div>
+
+                            <button
+                                class="navbar-dropdown__logout"
+                                id="logoutBtn">
+
+                                Keluar
+
+                            </button>
+
+                        </div>
 
                     </div>
+                `;
 
-                    <button
-                        class="navbar-dropdown__logout"
-                        id="logoutBtn">
+                const profileButton =
+                    document.querySelector("#profileButton");
 
-                        Keluar
+                const dropdown =
+                    document.querySelector("#profileDropdown");
 
-                    </button>
+                const logoutBtn =
+                    document.querySelector("#logoutBtn");
 
-                </div>
+                if (profileButton && dropdown && logoutBtn) {
 
-            </div>
-        `;
+                    profileButton.addEventListener("click", (e) => {
 
-    const profileButton = document.querySelector("#profileButton");
-    const dropdown = document.querySelector("#profileDropdown");
-    const logoutBtn = document.querySelector("#logoutBtn");
+                        e.stopPropagation();
 
-    if (profileButton && dropdown && logoutBtn) {
+                        dropdown.classList.toggle("active");
 
-        // Buka / Tutup Dropdown
-        profileButton.addEventListener("click", (e) => {
+                    });
 
-            e.stopPropagation();
-            dropdown.classList.toggle("active");
+                    document.addEventListener("click", (e) => {
 
-        });
+                        if (!e.target.closest(".navbar-profile")) {
 
-        // Klik di luar dropdown
-        document.addEventListener("click", (e) => {
+                            dropdown.classList.remove("active");
 
-            if (!e.target.closest(".navbar-profile")) {
+                        }
 
-                dropdown.classList.remove("active");
+                    });
 
-            }
+                    logoutBtn.addEventListener("click", async () => {
 
-        });
+                        const csrfToken = document.querySelector(
+                            'meta[name="csrf-token"]'
+                        )?.content;
 
-        // Logout
-        logoutBtn.addEventListener("click", () => {
+                        const response = await fetch("/logout", {
+                            method: "POST",
+                            headers: {
+                                "X-CSRF-TOKEN": csrfToken,
+                                "Accept": "application/json"
+                            }
+                        });
 
-            logout();
-            window.location.reload();
+                        if (response.ok) {
+                            window.location.href = "/";
+                        } else {
+                            alert("Logout gagal.");
+                        }
 
-        });
+                    });
+
+                }
+
+            })
+            .catch(() => {
+                // Belum login, biarkan tombol Masuk
+            });
 
     }
-
-}
 // ==========================
 // Tombol Mulai Pindai
 // ==========================
-    const scanButton = document.querySelector("#scanButton");
+const scanButton = document.querySelector("#scanButton");
 
-    if (scanButton) {
+if (scanButton) {
 
-        scanButton.addEventListener("click", (e) => {
+    scanButton.addEventListener("click", (e) => {
 
-            e.preventDefault();
+        e.preventDefault();
 
-            if (getCurrentUser()) {
+        fetch("/user")
+            .then(response => {
 
-                window.location.href = "/scan";
+                if (response.ok) {
 
-            } else {
+                    window.location.href = "/scan";
+
+                } else {
+
+                    window.location.href = "/login";
+
+                }
+
+            })
+            .catch(() => {
 
                 window.location.href = "/login";
 
-            }
+            });
 
-        });
+    });
 
-    }
-
+}
 });

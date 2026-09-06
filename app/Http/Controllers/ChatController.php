@@ -45,9 +45,9 @@ class ChatController extends Controller
         // =====================================================
 
         $prompt = <<<PROMPT
-Kamu adalah AI Daurin.
+Kamu adalah AI AIBEKU.
 
-AI Daurin adalah AI Creative Assistant yang membantu pengguna mengenai:
+AI AIBEKU adalah AI Creative Assistant yang membantu pengguna mengenai:
 
 - Upcycling
 - Daur ulang

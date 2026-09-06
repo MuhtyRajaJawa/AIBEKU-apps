@@ -2,8 +2,11 @@
     <div class="container navbar__container">
 
         <a href="/" class="navbar__logo">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo Daurin" class="navbar__logo-image">
-            <span class="navbar__logo-text">Daurin</span>
+            <img 
+                src="{{ asset('images/logo.png') }}" 
+                alt="Logo AIBEKU" 
+                class="navbar__logo-image"
+            >
         </a>
 
         <nav class="navbar__menu">

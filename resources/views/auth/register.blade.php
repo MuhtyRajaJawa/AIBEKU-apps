@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Daftar | Daurin</title>
+    <title>Daftar | AIBEKU</title>
 
     @vite([
         'resources/css/app.css',
@@ -55,12 +55,27 @@
 
                     <p>
                         Daftar untuk mulai mengubah barang bekas menjadi karya
-                        bernilai bersama AI Daurin.
+                        bernilai bersama AI AIBEKU.
                     </p>
 
                 </div>
 
-                <form id="registerForm" class="auth__form">
+
+                @if ($errors->any())
+                    <div style="color: #dc2626; margin-bottom: 15px;">
+                        @foreach ($errors->all() as $error)
+                            <div>{{ $error }}</div>
+                        @endforeach
+                    </div>
+                @endif
+
+                <form 
+                    id="registerForm" 
+                    class="auth__form"
+                    method="POST"
+                    action="{{ route('register.store') }}"
+                >
+                    @csrf
 
                     <div class="auth__group">
 
@@ -68,6 +83,7 @@
 
                         <input
                             id="name"
+                            name="name"
                             type="text"
                             placeholder="Masukkan nama lengkap"
                             required>
@@ -78,11 +94,12 @@
 
                         <label>Email</label>
 
-                    <input
-                        id="email"
-                        type="email"
-                        placeholder="Masukkan email"
-                        required>
+                        <input 
+                            id="email" 
+                            name="email"
+                            type="email" 
+                            placeholder="Masukkan email" 
+                            required>
 
                     </div>
 
@@ -94,6 +111,7 @@
 
                         <input
                             id="password"
+                            name="password"
                             type="password"
                             placeholder="Masukkan password"
                             required>
@@ -118,6 +136,7 @@
 
                         <input
                             id="confirmPassword"
+                            name="password_confirmation"
                             type="password"
                             placeholder="Ulangi password"
                             required>

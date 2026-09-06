@@ -625,57 +625,46 @@ body.auth{
 @media (max-width:992px){
 
     body.auth{
-
         overflow:auto;
-
     }
 
     .auth__container{
-
+        min-height:100vh;
         padding:28px;
-
+        align-items:flex-start;
+        box-sizing:border-box;
     }
 
     .auth__card{
-
         grid-template-columns:1fr;
-
         max-width:680px;
-
         height:auto;
+    }
 
+    .auth--login .auth__card,
+    .auth--register .auth__card{
+        height:auto;
     }
 
     .auth__image{
-
         height:300px;
-
     }
 
     .auth__content{
-
         padding:34px;
-
     }
 
     .auth__back{
-
         position:static;
-
         margin-bottom:20px;
-
     }
 
     .auth__header{
-
         margin-bottom:24px;
-
     }
 
     .auth__header h1{
-
         font-size:30px;
-
     }
 
 }
@@ -687,75 +676,59 @@ body.auth{
 @media (max-width:768px){
 
     body.auth{
-
         overflow:auto;
-
     }
 
     .auth__container{
-
+        min-height:100vh;
         padding:20px 16px;
-
+        align-items:flex-start;
+        box-sizing:border-box;
     }
 
     .auth__card{
-
         grid-template-columns:1fr;
-
-        border-radius:24px;
-
+        max-width:100%;
         height:auto;
+        border-radius:24px;
+    }
 
+    .auth--login .auth__card,
+    .auth--register .auth__card{
+        height:auto;
     }
 
     .auth__image{
-
         height:240px;
-
     }
 
     .auth__content{
-
         padding:28px 22px;
-
     }
 
     .auth__header{
-
         margin-bottom:22px;
-
     }
 
     .auth__header h1{
-
         font-size:28px;
-
     }
 
     .auth__header p{
-
         font-size:14px;
-
     }
 
     .auth__form{
-
         gap:18px;
-
     }
 
     .auth__group input{
-
         height:48px;
-
     }
 
     .auth__button{
-
         height:48px;
-
         font-size:15px;
-
     }
 
 }
@@ -767,99 +740,72 @@ body.auth{
 @media (max-width:480px){
 
     .auth__container{
-
         padding:14px;
-
+        align-items:flex-start;
     }
 
     .auth__card{
-
+        width:100%;
         border-radius:20px;
+    }
 
+    .auth--login .auth__card,
+    .auth--register .auth__card{
+        height:auto;
     }
 
     .auth__image{
-
         height:190px;
-
     }
 
     .auth__content{
-
         padding:22px 18px;
-
     }
 
     .auth__header{
-
         margin-bottom:18px;
-
     }
 
     .auth__header h1{
-
         font-size:24px;
-
     }
 
     .auth__header p{
-
         font-size:13px;
-
         line-height:1.6;
-
     }
 
     .auth__back{
-
         font-size:13px;
-
         margin-bottom:18px;
-
     }
 
     .auth__group{
-
         gap:6px;
-
     }
 
     .auth__group label{
-
         font-size:13px;
-
     }
 
     .auth__group input{
-
         height:46px;
-
         font-size:13px;
-
         padding:0 16px;
-
     }
 
     .toggle-password{
-
         right:16px;
-
         font-size:16px;
-
     }
 
     .auth__button{
-
         height:46px;
-
         font-size:14px;
-
     }
 
     .auth__footer{
-
         font-size:13px;
-
     }
 
 }

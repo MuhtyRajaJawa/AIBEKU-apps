@@ -9,7 +9,7 @@
     <!-- TAMBAHKAN INI -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Daurin')</title>
+    <title>@yield('title', 'AIBEKU')</title>
 
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
